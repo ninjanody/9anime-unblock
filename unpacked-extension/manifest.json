@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "9anime Unblock",
+    "version": "0.0.1",
+    "description": "9anime Anti-Adblock-Killer",
+    "author": "hq.af",
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "24": "icons/icon24.png",
+            "32": "icons/icon16.png"
+        },
+        "default_title": "9anime Unblock"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "activeTab",
+        "*://*.9anime.is/*"
+    ]
+}
